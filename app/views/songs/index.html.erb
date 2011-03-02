@@ -1,0 +1,16 @@
+<h1 style="text-align:center"><a href="list" style="color:inherit;text-decoration:none;">Song List</a></h1>
+
+<div class="ContentFlow">
+    <div class="loadIndicator"><div class="indicator"></div></div>
+    <div class="flow">
+      <% @songs.each do |song| %>
+        <div class="item" href="songs/<%=song.id%>">
+            <%= image_tag(song.avatar.url, :class=> "content")%>
+            <div class="caption"><%=song.name%></div>
+        </div>
+      <% end %>
+
+    </div>
+    <div class="globalCaption"></div>
+    <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
+</div>

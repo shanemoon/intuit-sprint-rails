@@ -1,0 +1,62 @@
+<%= form_for(@song,:html => { :multipart => true}) do |f| %>
+  <% if @song.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+      <ul>
+      <% @song.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+    <div class="field">
+        <b>Style:</b>
+        <%= @song.style %>
+    </div>
+
+    <div class="field">
+        <b>Tempo:</b>
+        <%= @song.tempo%>
+     </div>
+
+    <div class="field">
+        <b>Genre:</b>
+        <%= @song.genre%>
+    </div>
+
+    <div class="field">
+        <b>Key:</b>
+        <%= @song.key%>
+    </div>
+
+    <div class="field">
+        <b>Chord Progression:</b>
+        <%= @song.chordProgression%>
+    </div>
+
+    <div class="field">
+        <b>Number of Phrase:</b>
+        <%= @song.numPhrase%>
+    </div>
+
+  <div class="field">
+    <%= f.label :midi, @song.midi_file_name ? "Midi: "+@song.midi_file_name : "Midi:"%><br />
+    <%= f.file_field :midi %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vocal, @song.vocal_file_name ? "Vocal: "+@song.vocal_file_name : "Vocal: "%><br />
+    <%= f.file_field :vocal %>
+  </div>
+
+    <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

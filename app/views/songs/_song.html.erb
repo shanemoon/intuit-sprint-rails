@@ -1,0 +1,39 @@
+<div class= "show">
+  <div class= "show-heading">
+  <%= link_to image_tag('close.png',:size=>'32x32'), song, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+<div class="icon">
+  <%= link_to image_tag(song.avatar.url, :size=> "180x180"), song %>
+  <p><b><%= song.name %></b></p>
+  <embed class="audio-player" src="<%=song.midi.url%>"  autostart="false" loop="FALSE">
+</div>
+
+<div class="side">
+<p>
+  <b>Tempo:</b>
+  <%= song.tempo%>
+<p>
+  <b>Genre:</b>
+  <%= song.genre%>
+<p>
+  <b>Key:</b>
+  <%= song.key%>
+<p>
+  <b>Chord Progression:</b>
+  <%= song.chordProgression%>
+<p>
+  <b>Number of Phrases:</b>
+  <%= song.numPhrase%>
+<p>
+  <b>Midi:</b>
+  <a href="<%=song.midi.url%>">Download </a><br />
+<p>
+  <b>Melody:</b>
+  <a href="<%=song.melody.url%>">Download</a>
+<p>
+  <b>Vocal:</b>
+  <a href="<%=song.vocal.url%>">Download</a>
+</p>
+</div>
+
+</div>
