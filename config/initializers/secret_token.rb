@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-EchonestSprintRails::Application.config.secret_token = '04040df3cfe9151b32b40c35341ba50a54d80db7593bf856d8490913a79dc6cca4a0e341e6bb52049657f5bb1690cdb0fc5e326981ac68214791899238f4a059'
+IntuitSprintRails::Application.config.secret_token = 'ce6121b6b17f7d0ec44fc55fd51b5f24ad4c13591cf720d44a215d2e2e0d627aa7e781cdc71b06c83ce01cd212aa4c0a94e9ce3f25eba84d40309b983cd04c1f'

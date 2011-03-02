@@ -1,11 +1,4 @@
-EchonestSprintRails::Application.routes.draw do
-
-  match "songs/:id/download" => 'songs#download'
-  match "list" => "songs#list"
-  post "songs/:id/edit" => 'songs#edit'
-  resources :songs
-
-  root :to => "songs#index"
+IntuitSprintRails::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

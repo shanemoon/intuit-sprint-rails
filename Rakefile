@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-EchonestSprintRails::Application.load_tasks
+IntuitSprintRails::Application.load_tasks
