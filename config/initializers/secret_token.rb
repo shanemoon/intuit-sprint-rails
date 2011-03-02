@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-IntuitSprintRails::Application.config.secret_token = 'ce6121b6b17f7d0ec44fc55fd51b5f24ad4c13591cf720d44a215d2e2e0d627aa7e781cdc71b06c83ce01cd212aa4c0a94e9ce3f25eba84d40309b983cd04c1f'
+Picturesque::Application.config.secret_token = 'c520158abe2e6b4b0e2632098bb522dcf492c3b1facd48e499475541424269c1327d56b8a16d1755fd8dadbf6983f6e9b46b6f69cc692d92d021aa64b0fb376d'

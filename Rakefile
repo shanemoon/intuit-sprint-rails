@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-IntuitSprintRails::Application.load_tasks
+Picturesque::Application.load_tasks
